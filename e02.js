@@ -7,10 +7,11 @@ function insertionSort(arr){
         temp = arr[i]
         j = i
         while(j > 0 && arr[j-1] > temp){
-            arr[j] = temp
+            arr[j] = arr[j-1]
             j--
             console.log(`${arr}\n`)
         }
+        arr[j] = temp
         
         }
     return arr
